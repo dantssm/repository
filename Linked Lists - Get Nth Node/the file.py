@@ -22,4 +22,4 @@ def stringify(node):
 def get_nth(node, index):
     node = stringify(node)
     node = node.split(' -> ')
-    return Node(node[index])
+    return Node(int(node[index]))
