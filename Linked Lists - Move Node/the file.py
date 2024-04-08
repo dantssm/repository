@@ -11,5 +11,5 @@ class Context(object):
 def move_node(source, dest):
     node = source.data
     source = source.next
-    dest = Node(node, dest)
+    dest, dest.next = Node(node), dest
     return Context(source, dest)
